@@ -23,20 +23,16 @@
       cursor: pointer;
       margin-top: 20px;
     }
-    /* Container for Audio Players */
-    .audio-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap; 
+
+    /* Style the audio player */
+    audio {
       margin: 20px 0;
+      width: 100%;
+      max-width: 300px;
     }
-    /* Style individual audio players */
-    .audio-container audio {
-      width: 300px; 
-      max-width: 100%;
+
     }
-    /* Optional: Responsive iframe */
+    /* Responsive iframe */
     .fp-iframe {
       border: 1px solid lightgray;
       width: 100%;
@@ -48,22 +44,20 @@
 </head>
 
 <body>
-    <!-- Music Players Container -->
-    <div class="audio-container">
-        <!-- First Music Player -->
-        <div class="audio-player">
-            <h3>Playlist Part 1</h3>
-            <audio controls>
-              <source src="sunburst songs.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+
+    <!-- Music Player -->
+    <audio controls>
+      <source src="sunburst stories.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Flipbook Iframe -->
     <iframe 
       allowfullscreen="allowfullscreen" 
       scrolling="no" 
       class="fp-iframe" 
+      style="border: 1px solid lightgray; width: 100%; height: 400px;" 
       src="https://heyzine.com/flip-book/5f7179f77b.html">
     </iframe>
+
 </body>
 </html>
